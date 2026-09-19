@@ -1,0 +1,7 @@
+{
+  "name": "Maison Medical Clinic",
+  "description": "An award-style luxury editorial healthcare and preventive medical clinic website featuring bespoke primary care, serene architectural spaces, and holistic longevity.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

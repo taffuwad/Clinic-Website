@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maison Medical Clinic | Primary & Preventive Healthcare</title>
+  <meta name="description" content="An award-style luxury editorial healthcare and preventive medical clinic website featuring bespoke primary care, serene architectural spaces, and holistic longevity." />
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Maison Medical Clinic" />
+  <meta property="og:description" content="An award-style luxury editorial healthcare and preventive medical clinic website featuring bespoke primary care, serene architectural spaces, and holistic longevity." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Fonts: Cormorant Garamond (Display) & Manrope (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+
+  <!-- GSAP 3 & ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Lenis Smooth Scrolling -->
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+
+<body class="page-home">
+  <!-- Page Transition Curtain -->
+  <div class="transition-curtain" aria-hidden="true"></div>
+
+  <!-- Custom Cursor (Desktop) -->
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true">
+    <span class="cursor-text">VIEW</span>
+  </div>
+
+  <!-- Service Hover Floating Follower Image (Desktop) -->
+  <div class="floating-service-image" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Service Preview" />
+  </div>
+
+  <!-- 00. PRELOADER -->
+  <div id="preloader" aria-label="Loading Maison Medical Clinic">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <span>MAISON</span>
+        <span class="sub">MEDICAL & PREVENTIVE CLINIC</span>
+      </div>
+      <div class="preloader-bar-wrap">
+        <div class="preloader-bar"></div>
+      </div>
+      <div class="preloader-status">
+        <span>LOADING</span>
+        <span class="preloader-percent">00%</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE HEADER / NAVIGATION -->
+  <header class="site-header" id="main-header">
+    <div class="header-container">
+      <!-- Left: Elegant Logo -->
+      <a href="/index.html" class="brand-logo" id="header-brand-logo" aria-label="Maison Medical Homepage">
+        <span class="brand-name">MAISON</span>
+        <span class="brand-est">EST. 2004</span>
+      </a>
+
+      <!-- Center: Minimal Navigation -->
+      <nav class="nav-links-desktop" aria-label="Primary Navigation">
+        <a href="/index.html#home" class="nav-link active">HOME</a>
+        <a href="/about.html" class="nav-link">ABOUT</a>
+        <a href="/services.html" class="nav-link">SERVICES</a>
+        <a href="/team.html" class="nav-link">TEAM</a>
+        <a href="/index.html#resources" class="nav-link">RESOURCES</a>
+        <a href="/contact.html" class="nav-link">CONTACT</a>
+      </nav>
+
+      <!-- Right: Book a Visit CTA & Mobile Hamburger -->
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="nav-cta-btn open-booking-trigger" id="btn-header-book" aria-haspopup="dialog">
+          <span class="pulse-dot"></span>
+          <span>BOOK A VISIT</span>
+        </button>
+
+        <button class="hamburger-btn" id="btn-hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE FULLSCREEN MENU OVERLAY -->
+  <div id="mobile-menu" aria-label="Mobile Navigation Drawer">
+    <div class="mobile-menu-links">
+      <a href="/index.html" class="mobile-nav-link"><span class="num">01</span> HOME</a>
+      <a href="/about.html" class="mobile-nav-link"><span class="num">02</span> ABOUT CLINIC</a>
+      <a href="/services.html" class="mobile-nav-link"><span class="num">03</span> SERVICES</a>
+      <a href="/team.html" class="mobile-nav-link"><span class="num">04</span> MEDICAL TEAM</a>
+      <a href="/#resources" class="mobile-nav-link"><span class="num">05</span> RESOURCES</a>
+      <a href="/contact.html" class="mobile-nav-link"><span class="num">06</span> CONTACT & VISIT</a>
+    </div>
+
+    <div class="mobile-menu-footer">
+      <button class="nav-cta-btn open-booking-trigger" style="display: inline-flex; width: fit-content;">
+        <span class="pulse-dot"></span>
+        <span>BOOK A CONSULTATION</span>
+      </button>
+      <div class="contact-line">+1 (415) 890-2400 &bull; care@maisonclinic.com</div>
+      <div class="contact-line" style="font-size: 0.75rem; color: var(--text-secondary);">742 Evergreen Way, Suite 400, Presidio District</div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+    
+    <!-- ====================================================================
+         PAGE 01 — CINEMATIC EDITORIAL HERO (HOME SANCTUARY)
+         ==================================================================== -->
+    <section class="hero-section" id="home" data-section="home">
+      <div id="hero" style="position: absolute; top: 0; left: 0; width: 1px; height: 1px; opacity: 0; pointer-events: none;" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left: Editorial Headline & Meta -->
+          <div class="hero-left-content">
+            <div class="hero-tag">
+              <span class="meta-index">EST. 2004</span>
+              <span class="meta-divider"></span>
+              <span class="meta-category">PRIMARY & PREVENTIVE CLINIC</span>
+            </div>
+
+            <h1 class="hero-title" id="hero-main-title">
+              EXCEPTIONAL<br />
+              <span class="italic-word">Primary &amp;</span><br />
+              PREVENTIVE<br />
+              <span class="italic-word">Healthcare</span>
+            </h1>
+
+            <div class="hero-subtext-group">
+              <p class="hero-paragraph">
+                We provide thoughtful, personalized care in an environment designed around your long-term wellbeing, clinical precision, and enduring vitality.
+              </p>
+              <a href="/services.html" class="editorial-cta-link" id="hero-cta-explore">
+                <span>EXPLORE SERVICES</span>
+                <span class="arrow-icon">&rarr;</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right: Photographic Composition & Rotating Stamp Badge -->
+          <div class="hero-visual-col">
+            <div class="hero-image-frame" data-cursor="explore" data-cursor-text="EXPLORE">
+              <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1400&q=80" alt="Maison Medical Clinic Architectural Interior" />
+            </div>
+
+            <!-- Rotating Starburst Circular Stamp Badge -->
+            <div class="rotating-badge-wrap open-booking-trigger" title="Click to schedule your consultation">
+              <svg class="rotating-svg" viewBox="0 0 100 100">
+                <path id="badge-text-path" fill="none" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" />
+                <text font-size="9.5" letter-spacing="1.8" fill="#111111" font-family="'Manrope', sans-serif" font-weight="600">
+                  <textPath href="#badge-text-path" startOffset="0%">
+                    • SCHEDULE A VISIT • EST. 2004 • PRIVATE CLINIC
+                  </textPath>
+                </text>
+              </svg>
+              <div class="badge-center-icon">
+                <span>&oplus;</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Bottom Metadata Row -->
+        <div class="hero-footer-bar">
+          <div class="hero-foot-item">
+            <span class="hero-foot-label">LOCATION</span>
+            <span class="hero-foot-value">Presidio, San Francisco</span>
+          </div>
+          <div class="hero-foot-item">
+            <span class="hero-foot-label">PATIENT CAPACITY</span>
+            <span class="hero-foot-value">Private &amp; Concierge Access</span>
+          </div>
+          <div class="hero-foot-item">
+            <span class="hero-foot-label">CLINICAL ACCREDITATION</span>
+            <span class="hero-foot-value">Board-Certified Physicians</span>
+          </div>
+          <div class="hero-foot-item">
+            <span class="hero-foot-label">CONSULTATION PROTOCOL</span>
+            <span class="hero-foot-value">01 / 04 Comprehensive</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PAGE 02 — SERVICES / OFFERINGS
+         ==================================================================== -->
+    <section class="services-section section-spacer" id="services">
+      <div class="container">
+        <div class="section-eyebrow-row">
+          <span class="section-label">01 &mdash; CLINICAL SPECIALTIES</span>
+          <span class="section-label">SURGICAL & PREVENTIVE SCOPE</span>
+        </div>
+
+        <h2 class="section-headline" style="margin-bottom: 50px;">
+          Tailored Medical Care<br />
+          <span class="italic-serif">Grounded in Longevity</span>
+        </h2>
+
+        <!-- Editorial Interactive List with Hover Image Previews -->
+        <div class="services-list" id="interactive-services-list">
+          
+          <!-- Item 01 -->
+          <div class="service-item" data-image="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80">
+            <div class="service-left">
+              <span class="service-number">01</span>
+              <h3 class="service-title">PRIMARY CARE</h3>
+            </div>
+            <div class="service-right">
+              <p class="service-desc">Comprehensive internal medicine, continuous biometric optimization, and annual executive physicals.</p>
+              <div class="service-arrow">&rarr;</div>
+            </div>
+          </div>
+
+          <!-- Item 02 -->
+          <div class="service-item" data-image="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80">
+            <div class="service-left">
+              <span class="service-number">02</span>
+              <h3 class="service-title">OB/GYN VISITS</h3>
+            </div>
+            <div class="service-right">
+              <p class="service-desc">Dedicated gynecological wellness, endocrine balance, reproductive diagnostics, and menopause care.</p>
+              <div class="service-arrow">&rarr;</div>
+            </div>
+          </div>
+
+          <!-- Item 03 -->
+          <div class="service-item" data-image="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80">
+            <div class="service-left">
+              <span class="service-number">03</span>
+              <h3 class="service-title">URGENT CARE</h3>
+            </div>
+            <div class="service-right">
+              <p class="service-desc">Same-day clinical triage, point-of-care rapid testing, acute illness treatment without emergency room delays.</p>
+              <div class="service-arrow">&rarr;</div>
+            </div>
+          </div>
+
+          <!-- Item 04 -->
+          <div class="service-item" data-image="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=800&q=80">
+            <div class="service-left">
+              <span class="service-number">04</span>
+              <h3 class="service-title">MINOR PROCEDURES</h3>
+            </div>
+            <div class="service-right">
+              <p class="service-desc">Precision dermatologic excisions, joint and trigger-point injections, laceration repair in private sterile suites.</p>
+              <div class="service-arrow">&rarr;</div>
+            </div>
+          </div>
+
+          <!-- Item 05 -->
+          <div class="service-item" data-image="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80">
+            <div class="service-left">
+              <span class="service-number">05</span>
+              <h3 class="service-title">PREVENTIVE LONGEVITY</h3>
+            </div>
+            <div class="service-right">
+              <p class="service-desc">Advanced multi-omics biomarker mapping, cardiovascular plaque ultrasonography, and metabolic health restoration.</p>
+              <div class="service-arrow">&rarr;</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PAGE 03 — PRICING / CLINICAL PROCESS
+         ==================================================================== -->
+    <section class="pricing-process-section section-spacer" id="process">
+      <div class="container">
+        <div class="section-eyebrow-row">
+          <span class="section-label">02 &mdash; TRANSPARENCY &amp; PROTOCOL</span>
+          <span class="section-label">NO HIDDEN SURPRISES</span>
+        </div>
+
+        <div class="pricing-layout">
+          <!-- Left: Large Price & Scope -->
+          <div class="pricing-left-headline">
+            <span class="price-inclusions-tag">ALL-INCLUSIVE COMPREHENSIVE CARE</span>
+            <div class="price-display-box">
+              <span class="price-currency">$250</span>
+              <span class="price-period">/ Comprehensive Session</span>
+            </div>
+            <p style="font-size: 1.05rem; line-height: 1.65; color: var(--text-secondary); margin-top: 10px;">
+              Our transparent flat consultation includes unhurried face-to-face physician time, point-of-care laboratory analyses, and tailored actionable health architecture.
+            </p>
+            <div style="margin-top: 20px;">
+              <button class="editorial-cta-link open-booking-trigger" style="background: none; border: none; padding: 0;">
+                <span>SCHEDULE YOUR APPOINTMENT</span>
+                <span class="arrow-icon">&rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Overlapping Media with Delicate Architectural Illustration -->
+          <div class="pricing-right-media">
+            <div class="pricing-image-wrap" data-cursor="view" data-cursor-text="CLINIC">
+              <img src="https://images.unsplash.com/photo-1581594693702-fbdc51b2763b?auto=format&fit=crop&w=1000&q=80" alt="Physician Patient Consultation at Maison Medical" />
+            </div>
+            <div class="line-illustration-overlay"></div>
+          </div>
+        </div>
+
+        <!-- 3 Horizontal Process Columns -->
+        <div class="process-columns-grid">
+          <!-- Step 01 -->
+          <div class="process-step-card">
+            <span class="step-num">01 / STAGE</span>
+            <h3 class="step-title">CONSULTATION</h3>
+            <p class="step-desc">
+              A comprehensive 60-minute dialogue exploring genetic lineage, circadian patterns, nutritional baselines, and individual wellness aspirations.
+            </p>
+            <div class="step-arrow">&darr;</div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="process-step-card">
+            <span class="step-num">02 / STAGE</span>
+            <h3 class="step-title">EXAMINATION</h3>
+            <p class="step-desc">
+              Thorough non-invasive clinical diagnostics, high-resolution vascular imaging, full metabolic panels, and baseline physiological assessments.
+            </p>
+            <div class="step-arrow">&darr;</div>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="process-step-card">
+            <span class="step-num">03 / STAGE</span>
+            <h3 class="step-title">FOLLOW-UP</h3>
+            <p class="step-desc">
+              Continuous quarterly health tracking, direct 24/7 digital physician messaging, and seamless iterative refinement of your vitality plan.
+            </p>
+            <div class="step-arrow">&rarr;</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PAGE 04 — ABOUT CLINIC (ASYMMETRIC 2-COLUMN)
+         ==================================================================== -->
+    <section class="about-section section-spacer" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left: Large Clinic Exterior Architecture (55% width) -->
+          <div class="about-image-col">
+            <div class="about-image-frame" data-cursor="explore" data-cursor-text="INTERIOR">
+              <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1400&q=80" alt="Architectural Sanctuary of Maison Medical Clinic" />
+            </div>
+          </div>
+
+          <!-- Right: Muted Sage Content Block -->
+          <div class="about-content-col">
+            <div class="hero-tag">
+              <span class="meta-index">EST. 2004</span>
+              <span class="meta-divider"></span>
+              <span class="meta-category">OUR SANCTUARY</span>
+            </div>
+
+            <h2 class="about-heading">
+              About<br />
+              <span class="italic-serif">Our Clinic</span>
+            </h2>
+
+            <p class="about-lead">
+              Founded over two decades ago, Maison was conceived not as a sterile clinic, but as a tranquil architectural sanctuary where medical mastery meets serene human care.
+            </p>
+
+            <p class="about-paragraph">
+              Every room is calibrated with natural circadian light, acoustic isolation, and non-toxic organic materials. We intentionally limit our patient roster so that your physician is never rushed, always observant, and wholly invested in your health journey.
+            </p>
+
+            <div>
+              <a href="/about.html" class="editorial-cta-link">
+                <span>LEARN MORE &rarr;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PAGE 05 — PHILOSOPHY / STATEMENT (CENTRAL QUOTE)
+         ==================================================================== -->
+    <section class="philosophy-section" id="philosophy">
+      <div class="container">
+        <div class="quote-container">
+          <div class="subtle-line-accent"></div>
+          <blockquote class="philosophy-quote">
+            &ldquo;We believe great healthcare begins with <span class="em">listening</span>, understanding, and cultivating lasting <span class="em">trust</span>.&rdquo;
+          </blockquote>
+          <div class="philosophy-attribution">&mdash; CLINIC PHILOSOPHY &bull; MAISON MEDICAL</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PAGE 06 — MEDICAL TEAM (SWIPER SLIDER)
+         ==================================================================== -->
+    <section class="team-section section-spacer" id="team">
+      <div class="container">
+        <div class="team-header-row">
+          <div>
+            <span class="section-label">03 &mdash; PHYSICIANS &amp; SCHOLARS</span>
+            <h2 class="section-headline" style="margin-top: 12px;">
+              Meet<br />
+              <span class="italic-serif">Our Team</span>
+            </h2>
+          </div>
+
+          <!-- Slider Arrows -->
+          <div class="team-controls">
+            <button class="team-arrow-btn team-prev-btn" aria-label="Previous Doctor">&larr;</button>
+            <button class="team-arrow-btn team-next-btn" aria-label="Next Doctor">&rarr;</button>
+          </div>
+        </div>
+
+        <!-- Swiper Container -->
+        <div class="swiper team-swiper">
+          <div class="swiper-wrapper">
+            
+            <!-- Slide 01: Dr. Carolina Alvarez -->
+            <div class="swiper-slide">
+              <div class="team-slide-card">
+                <div class="team-photo-frame" data-cursor="view" data-cursor-text="DR. ALVAREZ">
+                  <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=80" alt="Dr. Carolina Alvarez, MD - Maison Medical" />
+                </div>
+                <div class="team-info-box">
+                  <span class="team-doctor-role">Primary Care &amp; Integrative Medicine</span>
+                  <h3 class="team-doctor-name">CAROLINA ALVAREZ, MD</h3>
+                  <p class="team-doctor-bio">
+                    Trained at Johns Hopkins with a dual fellowship in preventive cardiology and integrative internal medicine. Dr. Alvarez combines molecular metabolic diagnostics with personalized lifestyle medicine to build resilient longevity.
+                  </p>
+                  <div class="doctor-credentials">
+                    <span class="credential-tag">Johns Hopkins Medicine</span>
+                    <span class="credential-tag">ABIM Board Certified</span>
+                    <span class="credential-tag">18+ Years Experience</span>
+                  </div>
+                  <div style="margin-top: 12px;">
+                    <a href="/team.html" class="editorial-cta-link">
+                      <span>READ FULL BIOGRAPHY</span>
+                      <span class="arrow-icon">&rarr;</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 02: Dr. Julian Vance -->
+            <div class="swiper-slide">
+              <div class="team-slide-card">
+                <div class="team-photo-frame" data-cursor="view" data-cursor-text="DR. VANCE">
+                  <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&q=80" alt="Dr. Julian Vance, MD, PhD - Maison Medical" />
+                </div>
+                <div class="team-info-box">
+                  <span class="team-doctor-role">Cardiometabolic &amp; Longevity Sciences</span>
+                  <h3 class="team-doctor-name">JULIAN VANCE, MD, PhD</h3>
+                  <p class="team-doctor-bio">
+                    Former Stanford Medicine clinical faculty whose published research centers on arterial elasticity, cellular senescence, and early detection of subclinical cardiac risk markers.
+                  </p>
+                  <div class="doctor-credentials">
+                    <span class="credential-tag">Stanford University</span>
+                    <span class="credential-tag">FACC Fellow</span>
+                    <span class="credential-tag">Longevity Biomarkers</span>
+                  </div>
+                  <div style="margin-top: 12px;">
+                    <a href="/team.html" class="editorial-cta-link">
+                      <span>READ FULL BIOGRAPHY</span>
+                      <span class="arrow-icon">&rarr;</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 03: Dr. Elena Rostova -->
+            <div class="swiper-slide">
+              <div class="team-slide-card">
+                <div class="team-photo-frame" data-cursor="view" data-cursor-text="DR. ROSTOVA">
+                  <img src="https://images.unsplash.com/photo-1594824813550-e1c5f8849b3a?auto=format&fit=crop&w=900&q=80" alt="Dr. Elena Rostova, MD - Maison Medical" />
+                </div>
+                <div class="team-info-box">
+                  <span class="team-doctor-role">Women's Health &amp; Reproductive Endocrinology</span>
+                  <h3 class="team-doctor-name">ELENA ROSTOVA, MD</h3>
+                  <p class="team-doctor-bio">
+                    Harvard Medical School graduate specializing in personalized hormonal balance, perimenopause optimization, and minimally invasive diagnostic gynecological ultrasound.
+                  </p>
+                  <div class="doctor-credentials">
+                    <span class="credential-tag">Harvard Medical School</span>
+                    <span class="credential-tag">ACOG Fellow</span>
+                    <span class="credential-tag">Endocrine Specialization</span>
+                  </div>
+                  <div style="margin-top: 12px;">
+                    <a href="/team.html" class="editorial-cta-link">
+                      <span>READ FULL BIOGRAPHY</span>
+                      <span class="arrow-icon">&rarr;</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 04: Dr. Marcus Sterling -->
+            <div class="swiper-slide">
+              <div class="team-slide-card">
+                <div class="team-photo-frame" data-cursor="view" data-cursor-text="DR. STERLING">
+                  <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=900&q=80" alt="Dr. Marcus Sterling, DO - Maison Medical" />
+                </div>
+                <div class="team-info-box">
+                  <span class="team-doctor-role">Musculoskeletal &amp; Restorative Medicine</span>
+                  <h3 class="team-doctor-name">MARCUS STERLING, DO</h3>
+                  <p class="team-doctor-bio">
+                    Columbia University fellowship trained in physical medicine, ultrasound-guided regenerative therapies, and postural biomechanics for high-performance recovery.
+                  </p>
+                  <div class="doctor-credentials">
+                    <span class="credential-tag">Columbia University</span>
+                    <span class="credential-tag">Sports &amp; Physical Medicine</span>
+                    <span class="credential-tag">Joint Restoration</span>
+                  </div>
+                  <div style="margin-top: 12px;">
+                    <a href="/team.html" class="editorial-cta-link">
+                      <span>READ FULL BIOGRAPHY</span>
+                      <span class="arrow-icon">&rarr;</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PAGE 07 — HEALTH INFORMATION / VACCINATIONS
+         ==================================================================== -->
+    <section class="health-info-section section-spacer" id="health-info">
+      <div class="container">
+        <div class="health-grid">
+          <!-- Left: Big Editorial Text -->
+          <div class="health-left-content">
+            <span class="section-label">04 &mdash; PREVENTIVE IMMUNOLOGY</span>
+            <h2 class="health-heading">
+              Vaccinations are<br />
+              <span class="italic-serif">essential</span> to protect<br />
+              your health.
+            </h2>
+            <p class="health-paragraph">
+              Proactive immunization forms the cornerstone of individual and communal resilience. At Maison, we administer refined, preservative-free formulations in a calming, monitored clinical setting with antibody titre verification.
+            </p>
+            <div style="margin-top: 16px;">
+              <button class="editorial-cta-link open-booking-trigger" style="background: none; border: none; padding: 0;">
+                <span>SCHEDULE IMMUNIZATION APPOINTMENT</span>
+                <span class="arrow-icon">&rarr;</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Category List -->
+          <div class="vaccine-category-list">
+            
+            <!-- Category 01 -->
+            <div class="vaccine-category-item active">
+              <div class="vaccine-header-row">
+                <span class="vaccine-title">INFLUENZA</span>
+                <span class="vaccine-icon">&plus;</span>
+              </div>
+              <div class="vaccine-details-panel">
+                <div class="vaccine-details-content">
+                  Annual quadrivalent formulated vaccine safeguarding against active influenza A and B strains. Recommended every autumn for optimal viral defense.
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 02 -->
+            <div class="vaccine-category-item">
+              <div class="vaccine-header-row">
+                <span class="vaccine-title">PNEUMONIA</span>
+                <span class="vaccine-icon">&plus;</span>
+              </div>
+              <div class="vaccine-details-panel">
+                <div class="vaccine-details-content">
+                  Conjugate pneumococcal immunization (PCV20) defending against invasive Streptococcus pneumoniae respiratory infections and systemic bacteremia.
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 03 -->
+            <div class="vaccine-category-item">
+              <div class="vaccine-header-row">
+                <span class="vaccine-title">SHINGLES</span>
+                <span class="vaccine-icon">&plus;</span>
+              </div>
+              <div class="vaccine-details-panel">
+                <div class="vaccine-details-content">
+                  Recombinant zoster 2-dose series offering over 90% efficacy against herpes zoster reactivation and debilitating post-herpetic neuralgia.
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 04 -->
+            <div class="vaccine-category-item">
+              <div class="vaccine-header-row">
+                <span class="vaccine-title">HPV</span>
+                <span class="vaccine-icon">&plus;</span>
+              </div>
+              <div class="vaccine-details-panel">
+                <div class="vaccine-details-content">
+                  9-valent human papillomavirus coverage protecting against high-risk oncogenic strains associated with cervical and oropharyngeal malignancies.
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 05 -->
+            <div class="vaccine-category-item">
+              <div class="vaccine-header-row">
+                <span class="vaccine-title">HEPATITIS A</span>
+                <span class="vaccine-icon">&plus;</span>
+              </div>
+              <div class="vaccine-details-panel">
+                <div class="vaccine-details-content">
+                  Inactivated viral series providing robust, lifelong hepatic protection against contaminated food and water-borne pathogens for travelers and executives.
+                </div>
+              </div>
+            </div>
+
+            <!-- Category 06 -->
+            <div class="vaccine-category-item">
+              <div class="vaccine-header-row">
+                <span class="vaccine-title">HEPATITIS B</span>
+                <span class="vaccine-icon">&plus;</span>
+              </div>
+              <div class="vaccine-details-panel">
+                <div class="vaccine-details-content">
+                  Recombinant surface antigen immunization guarding against chronic viral hepatitis, cirrhosis, and hepatocellular carcinoma.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PAGE 08 — CONTENT / RESOURCES
+         ==================================================================== -->
+    <section class="resources-section section-spacer" id="resources">
+      <div class="container">
+        <div class="section-eyebrow-row">
+          <span class="section-label">05 &mdash; CLINICAL JOURNAL</span>
+          <span class="section-label">EVIDENCE-BASED INSIGHTS</span>
+        </div>
+
+        <h2 class="section-headline" style="margin-bottom: 48px;">
+          Latest from<br />
+          <span class="italic-serif">the Clinic</span>
+        </h2>
+
+        <!-- 3 Editorial Articles with Separators -->
+        <div class="articles-editorial-list">
+          
+          <!-- Article 01 -->
+          <article class="article-row-item">
+            <span class="article-category">LONGEVITY</span>
+            <h3 class="article-title">The Architecture of Rest: How Sleep Architecture Shapes Immune Resilience</h3>
+            <span class="article-date">OCTOBER 14, 2026</span>
+            <span class="article-arrow">&rarr;</span>
+          </article>
+
+          <!-- Article 02 -->
+          <article class="article-row-item">
+            <span class="article-category">PREVENTIVE</span>
+            <h3 class="article-title">Beyond Routine Bloodwork: The Crucial Role of Advanced Multi-Omic Screening</h3>
+            <span class="article-date">SEPTEMBER 28, 2026</span>
+            <span class="article-arrow">&rarr;</span>
+          </article>
+
+          <!-- Article 03 -->
+          <article class="article-row-item">
+            <span class="article-category">WELLNESS</span>
+            <h3 class="article-title">Designing Calm: How Architectural Spaces Directly Regulate Cortisol Response</h3>
+            <span class="article-date">SEPTEMBER 12, 2026</span>
+            <span class="article-arrow">&rarr;</span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         PAGE 09 — CONTACT / FOOTER (MINIMAL LUXURY)
+         ==================================================================== -->
+    <footer class="site-footer" id="footer">
+      <div class="container">
+        <!-- Top Massive Statement -->
+        <div class="footer-top-cta">
+          <span class="footer-subhead">AN INVITATION TO BETTER CARE</span>
+          <h2 class="footer-huge-statement">
+            YOUR HEALTH.<br />
+            <span class="italic-serif">Our Priority.</span>
+          </h2>
+          <button class="editorial-cta-link open-booking-trigger" style="color: var(--text-light); background: none; border: none; padding: 0;">
+            <span style="border-bottom: 1px solid var(--text-light); padding-bottom: 4px;">BOOK A VISIT &rarr;</span>
+          </button>
+        </div>
+
+        <!-- 4-Column Minimal Footer Directory -->
+        <div class="footer-info-grid">
+          <div class="footer-col">
+            <span class="footer-col-title">VISIT US</span>
+            <p class="footer-text-link">
+              Maison Medical Clinic<br />
+              Presidio Heritage District<br />
+              San Francisco, CA 94129
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <span class="footer-col-title">HOURS</span>
+            <p class="footer-text-link">
+              Monday &ndash; Friday: 8:00 AM &ndash; 6:00 PM<br />
+              Saturday: 9:00 AM &ndash; 2:00 PM<br />
+              Sunday: Private On-Call
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <span class="footer-col-title">CONTACT</span>
+            <a href="tel:+14158902400" class="footer-text-link">+1 (415) 890-2400</a>
+            <a href="mailto:care@maisonclinic.com" class="footer-text-link">care@maisonclinic.com</a>
+            <a href="/contact.html" class="footer-text-link">Directions &amp; Parking &rarr;</a>
+          </div>
+
+          <div class="footer-col">
+            <span class="footer-col-title">NAVIGATION</span>
+            <a href="/about.html" class="footer-text-link">About Our Clinic</a>
+            <a href="/services.html" class="footer-text-link">Specialties &amp; Services</a>
+            <a href="/team.html" class="footer-text-link">Medical Faculty</a>
+            <a href="/contact.html" class="footer-text-link">Patient Portal Login</a>
+          </div>
+        </div>
+
+        <!-- Bottom Copyright & Legal -->
+        <div class="footer-bottom-row">
+          <span>&copy; 2004&ndash;2026 MAISON MEDICAL CLINIC. ALL RIGHTS RESERVED.</span>
+          <div style="display: flex; gap: 24px;">
+            <a href="#">PRIVACY POLICY</a>
+            <a href="#">HIPAA COMPLIANCE</a>
+            <a href="#">PATIENT RIGHTS</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ====================================================================
+       BOOKING APPOINTMENT DRAWER MODAL
+       ==================================================================== -->
+  <div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="drawer-title">
+    <div class="booking-drawer">
+      <div>
+        <div class="drawer-header">
+          <div>
+            <span style="font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-secondary);">RESERVATION</span>
+            <h2 id="drawer-title" style="font-size: 2.2rem; margin-top: 4px;">Schedule a Consultation</h2>
+          </div>
+          <button class="drawer-close-btn" aria-label="Close reservation drawer">&times;</button>
+        </div>
+
+        <form class="booking-form" id="appointment-form">
+          <div class="form-group">
+            <label class="form-label" for="patient-name">FULL NAME</label>
+            <input type="text" id="patient-name" class="form-input" placeholder="Eleanor Vance" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="patient-email">EMAIL ADDRESS</label>
+            <input type="email" id="patient-email" class="form-input" placeholder="eleanor@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="patient-phone">PHONE NUMBER</label>
+            <input type="tel" id="patient-phone" class="form-input" placeholder="+1 (415) 555-0199" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="service-select">SERVICE OF INTEREST</label>
+            <select id="service-select" class="form-select" required>
+              <option value="primary">Primary Care &amp; Executive Assessment ($250)</option>
+              <option value="obgyn">OB/GYN &amp; Hormonal Balance</option>
+              <option value="urgent">Urgent Clinical Care &amp; Diagnostics</option>
+              <option value="minor">Minor Dermatologic or Joint Procedure</option>
+              <option value="longevity">Comprehensive Longevity Biomarker Mapping</option>
+              <option value="vaccination">Preventive Immunization Session</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="preferred-date">PREFERRED DATE</label>
+            <input type="date" id="preferred-date" class="form-input" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="clinical-notes">HEALTH GOALS OR CONCERNS (OPTIONAL)</label>
+            <textarea id="clinical-notes" class="form-textarea" rows="3" placeholder="Briefly describe your focus areas or medical history..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-booking-btn">CONFIRM APPOINTMENT REQUEST &rarr;</button>
+        </form>
+
+        <!-- Success Feedback -->
+        <div class="booking-success-msg" id="booking-success">
+          <div style="font-size: 2.2rem; color: #5B8266;">&#10003;</div>
+          <h3 style="font-size: 2rem;">Consultation Requested</h3>
+          <p style="color: var(--text-secondary); max-width: 380px;">
+            Thank you. Our patient care concierge will review your schedule and reach out within 2 hours to confirm your reservation details.
+          </p>
+          <button class="nav-cta-btn drawer-close-btn" style="width: auto; border-radius: 999px; margin-top: 16px;">
+            <span>CLOSE WINDOW</span>
+          </button>
+        </div>
+      </div>
+
+      <div style="margin-top: 32px; border-top: 1px solid var(--border-subtle); padding-top: 16px; font-size: 0.72rem; color: var(--text-secondary);">
+        Direct Inquiries: +1 (415) 890-2400 &bull; Private Presidio Suites
+      </div>
+    </div>
+  </div>
+
+  <!-- Master JavaScript Entry Point -->
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

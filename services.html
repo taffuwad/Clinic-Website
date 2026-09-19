@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clinical Services &amp; Specialties | Maison Medical</title>
+  <meta name="description" content="Explore our complete scope of primary care, women's health, longevity medicine, and transparent clinical consultation pricing." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+
+  <!-- GSAP & Lenis -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+</head>
+
+<body class="page-services">
+  <div class="transition-curtain" aria-hidden="true"></div>
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true">
+    <span class="cursor-text">EXPLORE</span>
+  </div>
+
+  <!-- Floating service hover image -->
+  <div class="floating-service-image" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80" alt="Service Preview" />
+  </div>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" id="main-header">
+    <div class="header-container">
+      <a href="/index.html" class="brand-logo" aria-label="Maison Medical Homepage">
+        <span class="brand-name">MAISON</span>
+        <span class="brand-est">EST. 2004</span>
+      </a>
+
+      <nav class="nav-links-desktop" aria-label="Primary Navigation">
+        <a href="/index.html#home" class="nav-link">HOME</a>
+        <a href="/about.html" class="nav-link">ABOUT</a>
+        <a href="/services.html" class="nav-link active">SERVICES</a>
+        <a href="/team.html" class="nav-link">TEAM</a>
+        <a href="/index.html#resources" class="nav-link">RESOURCES</a>
+        <a href="/contact.html" class="nav-link">CONTACT</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="nav-cta-btn open-booking-trigger">
+          <span class="pulse-dot"></span>
+          <span>BOOK A VISIT</span>
+        </button>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu">
+    <div class="mobile-menu-links">
+      <a href="/index.html" class="mobile-nav-link"><span class="num">01</span> HOME</a>
+      <a href="/about.html" class="mobile-nav-link"><span class="num">02</span> ABOUT CLINIC</a>
+      <a href="/services.html" class="mobile-nav-link"><span class="num">03</span> SERVICES</a>
+      <a href="/team.html" class="mobile-nav-link"><span class="num">04</span> MEDICAL TEAM</a>
+      <a href="/index.html#resources" class="mobile-nav-link"><span class="num">05</span> RESOURCES</a>
+      <a href="/contact.html" class="mobile-nav-link"><span class="num">06</span> CONTACT & VISIT</a>
+    </div>
+    <div class="mobile-menu-footer">
+      <button class="nav-cta-btn open-booking-trigger" style="display: inline-flex; width: fit-content;">
+        <span class="pulse-dot"></span>
+        <span>BOOK A CONSULTATION</span>
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero-section" style="min-height: 65vh; padding-top: 170px;">
+      <div class="container">
+        <div class="hero-tag" style="margin-bottom: 24px;">
+          <span class="meta-index">SCOPE OF CARE</span>
+          <span class="meta-divider"></span>
+          <span class="meta-category">PREVENTIVE & SPECIALIZED</span>
+        </div>
+        <h1 class="hero-title">
+          CLINICAL<br />
+          <span class="italic-word">Specialties &amp;</span><br />
+          PRICING
+        </h1>
+        <p class="hero-paragraph" style="max-width: 680px; margin-top: 24px;">
+          Explore our complete clinical offerings. We maintain unambiguous, all-inclusive pricing without surprise bills or hidden facility surcharges.
+        </p>
+      </div>
+    </section>
+
+    <!-- FULL INTERACTIVE SERVICES LIST -->
+    <section class="services-section section-spacer">
+      <div class="container">
+        <div class="section-eyebrow-row">
+          <span class="section-label">01 &mdash; DETAILED SPECIALTIES</span>
+          <span class="section-label">HOVER TO REVEAL IMAGERY</span>
+        </div>
+
+        <div class="services-list">
+          <!-- 01 -->
+          <div class="service-item" data-image="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=800&q=80">
+            <div class="service-left">
+              <span class="service-number">01</span>
+              <h3 class="service-title">PRIMARY CARE &amp; INTERNAL MEDICINE</h3>
+            </div>
+            <div class="service-right">
+              <p class="service-desc">60-minute unhurried examinations, comprehensive metabolic baseline, 24/7 direct physician communication channels.</p>
+              <div class="service-arrow">&rarr;</div>
+            </div>
+          </div>
+
+          <!-- 02 -->
+          <div class="service-item" data-image="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80">
+            <div class="service-left">
+              <span class="service-number">02</span>
+              <h3 class="service-title">OB/GYN &amp; REPRODUCTIVE HEALTH</h3>
+            </div>
+            <div class="service-right">
+              <p class="service-desc">Personalized endocrinology, perimenopause bio-identical therapy, routine cervical cytology, and pelvic ultrasound.</p>
+              <div class="service-arrow">&rarr;</div>
+            </div>
+          </div>
+
+          <!-- 03 -->
+          <div class="service-item" data-image="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80">
+            <div class="service-left">
+              <span class="service-number">03</span>
+              <h3 class="service-title">URGENT CLINICAL CARE</h3>
+            </div>
+            <div class="service-right">
+              <p class="service-desc">Same-day priority arrival, point-of-care rapid blood and viral diagnostics, acute infection management, zero waiting queues.</p>
+              <div class="service-arrow">&rarr;</div>
+            </div>
+          </div>
+
+          <!-- 04 -->
+          <div class="service-item" data-image="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=800&q=80">
+            <div class="service-left">
+              <span class="service-number">04</span>
+              <h3 class="service-title">MINOR SURGICAL PROCEDURES</h3>
+            </div>
+            <div class="service-right">
+              <p class="service-desc">Dermatologic cryo and punch biopsies, cyst excisions, joint aspirates, trigger-point injections in sterile quiet suites.</p>
+              <div class="service-arrow">&rarr;</div>
+            </div>
+          </div>
+
+          <!-- 05 -->
+          <div class="service-item" data-image="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80">
+            <div class="service-left">
+              <span class="service-number">05</span>
+              <h3 class="service-title">PREVENTIVE LONGEVITY MEDICINE</h3>
+            </div>
+            <div class="service-right">
+              <p class="service-desc">ApoB/Lp(a) advanced cardiovascular lipidology, DNA methylation epigenetic clock reviews, and VO2-max endurance mapping.</p>
+              <div class="service-arrow">&rarr;</div>
+            </div>
+          </div>
+
+          <!-- 06 -->
+          <div class="service-item" data-image="https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=800&q=80">
+            <div class="service-left">
+              <span class="service-number">06</span>
+              <h3 class="service-title">TRAVEL IMMUNOLOGY &amp; VACCINES</h3>
+            </div>
+            <div class="service-right">
+              <p class="service-desc">Pre-travel geographical disease consultations, yellow fever, typhoid, hepatitis, rabies, and antibody confirmation testing.</p>
+              <div class="service-arrow">&rarr;</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRANSPARENT PRICING GRID -->
+    <section class="about-section section-spacer">
+      <div class="container">
+        <div class="section-eyebrow-row">
+          <span class="section-label">02 &mdash; TRANSPARENT FEE SCHEDULE</span>
+          <span class="section-label">UPFRONT CLARITY</span>
+        </div>
+
+        <div class="editorial-grid">
+          <!-- Fee Card 1 -->
+          <div style="grid-column: span 4; background-color: var(--bg-primary); padding: 40px; border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: space-between; min-height: 380px;">
+            <div>
+              <span class="step-num">PRIMARY &amp; PREVENTIVE</span>
+              <h3 style="font-size: 2.2rem; margin: 12px 0;">Comprehensive Clinical Intake</h3>
+              <div style="font-family: var(--font-display); font-size: 3.5rem; margin-bottom: 16px;">$250</div>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);">
+                Includes 60-minute doctor consultation, full physiological review, routine in-house point-of-care analysis, and bespoke vitality plan.
+              </p>
+            </div>
+            <button class="nav-cta-btn open-booking-trigger" style="width: 100%; justify-content: center; margin-top: 24px;">
+              <span>SCHEDULE THIS VISIT</span>
+            </button>
+          </div>
+
+          <!-- Fee Card 2 -->
+          <div style="grid-column: span 4; background-color: var(--bg-primary); padding: 40px; border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: space-between; min-height: 380px;">
+            <div>
+              <span class="step-num">EXECUTIVE LONGEVITY</span>
+              <h3 style="font-size: 2.2rem; margin: 12px 0;">Annual Vitality &amp; Biomarkers</h3>
+              <div style="font-family: var(--font-display); font-size: 3.5rem; margin-bottom: 16px;">$650</div>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);">
+                Multi-omics biomarker testing, carotid ultrasound, advanced lipid fractionations, resting metabolic profiling, and 90-minute synthesis session.
+              </p>
+            </div>
+            <button class="nav-cta-btn open-booking-trigger" style="width: 100%; justify-content: center; margin-top: 24px;">
+              <span>SCHEDULE THIS VISIT</span>
+            </button>
+          </div>
+
+          <!-- Fee Card 3 -->
+          <div style="grid-column: span 4; background-color: var(--bg-primary); padding: 40px; border: 1px solid var(--border-subtle); display: flex; flex-direction: column; justify-content: space-between; min-height: 380px;">
+            <div>
+              <span class="step-num">ACUTE CARE</span>
+              <h3 style="font-size: 2.2rem; margin: 12px 0;">Same-Day Urgent Care</h3>
+              <div style="font-family: var(--font-display); font-size: 3.5rem; margin-bottom: 16px;">$195</div>
+              <p style="font-size: 0.92rem; color: var(--text-secondary);">
+                Immediate private arrival, acute symptomatic evaluation, instant viral PCR testing, prescription dispensation, and follow-up messaging.
+              </p>
+            </div>
+            <button class="nav-cta-btn open-booking-trigger" style="width: 100%; justify-content: center; margin-top: 24px;">
+              <span>SCHEDULE THIS VISIT</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top-cta">
+          <span class="footer-subhead">TRANSPARENT, THOUGHTFUL CARE</span>
+          <h2 class="footer-huge-statement">
+            YOUR HEALTH.<br />
+            <span class="italic-serif">Our Priority.</span>
+          </h2>
+          <button class="editorial-cta-link open-booking-trigger" style="color: var(--text-light); background: none; border: none; padding: 0;">
+            <span style="border-bottom: 1px solid var(--text-light); padding-bottom: 4px;">BOOK AN APPOINTMENT &rarr;</span>
+          </button>
+        </div>
+
+        <div class="footer-info-grid">
+          <div class="footer-col">
+            <span class="footer-col-title">VISIT US</span>
+            <p class="footer-text-link">
+              Maison Medical Clinic<br />
+              Presidio Heritage District<br />
+              San Francisco, CA 94129
+            </p>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">CONTACT</span>
+            <a href="tel:+14158902400" class="footer-text-link">+1 (415) 890-2400</a>
+            <a href="mailto:care@maisonclinic.com" class="footer-text-link">care@maisonclinic.com</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">LINKS</span>
+            <a href="/about.html" class="footer-text-link">About Clinic</a>
+            <a href="/team.html" class="footer-text-link">Medical Team</a>
+            <a href="/contact.html" class="footer-text-link">Contact &amp; Map</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">MEMBERSHIP</span>
+            <p class="footer-text-link">Inquire about private concierge memberships with guaranteed same-day home visits.</p>
+          </div>
+        </div>
+
+        <div class="footer-bottom-row">
+          <span>&copy; 2004&ndash;2026 MAISON MEDICAL CLINIC. ALL RIGHTS RESERVED.</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- BOOKING MODAL -->
+  <div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true">
+    <div class="booking-drawer">
+      <div>
+        <div class="drawer-header">
+          <div>
+            <span style="font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-secondary);">RESERVATION</span>
+            <h2 style="font-size: 2.2rem; margin-top: 4px;">Schedule a Consultation</h2>
+          </div>
+          <button class="drawer-close-btn" aria-label="Close reservation drawer">&times;</button>
+        </div>
+
+        <form class="booking-form" id="appointment-form">
+          <div class="form-group">
+            <label class="form-label" for="patient-name">FULL NAME</label>
+            <input type="text" id="patient-name" class="form-input" placeholder="Eleanor Vance" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="patient-email">EMAIL ADDRESS</label>
+            <input type="email" id="patient-email" class="form-input" placeholder="eleanor@example.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="patient-phone">PHONE NUMBER</label>
+            <input type="tel" id="patient-phone" class="form-input" placeholder="+1 (415) 555-0199" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="service-select">SERVICE OF INTEREST</label>
+            <select id="service-select" class="form-select" required>
+              <option value="primary">Primary Care Consultation ($250)</option>
+              <option value="longevity">Annual Vitality &amp; Biomarkers ($650)</option>
+              <option value="urgent">Same-Day Urgent Care ($195)</option>
+              <option value="obgyn">OB/GYN Care</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="preferred-date">PREFERRED DATE</label>
+            <input type="date" id="preferred-date" class="form-input" required />
+          </div>
+          <button type="submit" class="submit-booking-btn">CONFIRM APPOINTMENT REQUEST &rarr;</button>
+        </form>
+
+        <div class="booking-success-msg" id="booking-success">
+          <div style="font-size: 2.2rem; color: #5B8266;">&#10003;</div>
+          <h3 style="font-size: 2rem;">Consultation Requested</h3>
+          <p style="color: var(--text-secondary);">Our concierge will contact you within 2 hours to confirm your reservation.</p>
+          <button class="nav-cta-btn drawer-close-btn" style="width: auto; margin-top: 16px;"><span>CLOSE</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

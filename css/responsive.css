@@ -1,0 +1,288 @@
+/* ==========================================================================
+   MAISON MEDICAL CLINIC — RESPONSIVE STYLESHEET
+   Mobile, Tablet, and Touch Adaptations
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   TABLET ADAPTATION (768px – 1199px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199px) {
+  :root {
+    --gutter-desktop: 32px;
+    --section-spacing: 90px;
+  }
+
+  .nav-links-desktop {
+    gap: 24px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr 0.9fr;
+    column-gap: 32px;
+  }
+
+  .pricing-layout {
+    gap: 40px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+  }
+
+  .team-slide-card {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+
+  .footer-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .article-row-item {
+    grid-template-columns: 130px 1fr 140px 32px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   MOBILE ADAPTATION (320px – 767px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767px) {
+  :root {
+    --gutter-desktop: 20px;
+    --section-spacing: 70px;
+  }
+
+  /* Cursor disabled on mobile */
+  .custom-cursor,
+  .cursor-follower,
+  .floating-service-image {
+    display: none !important;
+  }
+
+  /* Navigation */
+  .nav-links-desktop,
+  .nav-cta-btn {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .site-header {
+    padding: 20px 0;
+  }
+
+  /* Hero Section */
+  .hero-section {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    min-height: auto;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .hero-title {
+    font-size: clamp(3rem, 13vw, 4.5rem);
+    line-height: 0.92;
+  }
+
+  .hero-image-frame {
+    max-width: 100%;
+    aspect-ratio: 1 / 1.1;
+  }
+
+  .rotating-badge-wrap {
+    bottom: -16px;
+    left: -12px;
+    width: 90px;
+    height: 90px;
+  }
+
+  .hero-footer-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 40px;
+    padding-top: 30px;
+  }
+
+  /* Services Section */
+  .section-eyebrow-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .service-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 28px 0;
+  }
+
+  .service-item:hover {
+    padding-left: 10px;
+  }
+
+  .service-left {
+    gap: 20px;
+  }
+
+  .service-title {
+    font-size: clamp(1.8rem, 7vw, 2.5rem);
+  }
+
+  .service-right {
+    width: 100%;
+    justify-content: space-between;
+    gap: 16px;
+    padding-left: 36px;
+  }
+
+  .service-desc {
+    text-align: left;
+    max-width: 100%;
+    font-size: 0.88rem;
+  }
+
+  /* Pricing / Process Section */
+  .pricing-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .process-columns-grid {
+    grid-template-columns: 1fr;
+    row-gap: 32px;
+  }
+
+  .line-illustration-overlay {
+    display: none;
+  }
+
+  /* About Section */
+  .about-grid {
+    grid-template-columns: 1fr;
+    row-gap: 36px;
+  }
+
+  .about-content-col {
+    padding-left: 0;
+  }
+
+  /* Philosophy Section */
+  .philosophy-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .philosophy-quote {
+    font-size: clamp(1.8rem, 6.5vw, 2.6rem);
+  }
+
+  /* Team Section */
+  .team-header-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .team-slide-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .team-photo-frame {
+    aspect-ratio: 4 / 4.5;
+  }
+
+  /* Health Info / Vaccinations */
+  .health-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .health-left-content {
+    position: static;
+  }
+
+  .vaccine-title {
+    font-size: 1.35rem;
+  }
+
+  /* Resources Section */
+  .article-row-item {
+    grid-template-columns: 1fr auto;
+    row-gap: 12px;
+    padding: 24px 0;
+  }
+
+  .article-category {
+    grid-column: 1 / -1;
+  }
+
+  .article-title {
+    grid-column: 1;
+    font-size: 1.35rem;
+    padding-right: 12px;
+  }
+
+  .article-arrow {
+    grid-column: 2;
+  }
+
+  .article-date {
+    grid-column: 1 / -1;
+    text-align: left;
+    font-size: 0.75rem;
+  }
+
+  /* Footer */
+  .footer-huge-statement {
+    font-size: clamp(2.6rem, 11vw, 4.2rem);
+  }
+
+  .footer-info-grid {
+    grid-template-columns: 1fr;
+    row-gap: 36px;
+  }
+
+  .footer-bottom-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  /* Booking Drawer */
+  .booking-drawer {
+    padding: 32px 20px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   PREFERS-REDUCED-MOTION
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .rotating-svg {
+    animation: none !important;
+  }
+
+  .custom-cursor,
+  .cursor-follower {
+    display: none !important;
+  }
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical Faculty &amp; Physicians | Maison Medical</title>
+  <meta name="description" content="Meet our board-certified physicians, scholars, and specialists dedicated to personalized, thoughtful primary and longevity medicine." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+
+  <!-- GSAP & Lenis -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+</head>
+
+<body class="page-team">
+  <div class="transition-curtain" aria-hidden="true"></div>
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true">
+    <span class="cursor-text">EXPLORE</span>
+  </div>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" id="main-header">
+    <div class="header-container">
+      <a href="/index.html" class="brand-logo" aria-label="Maison Medical Homepage">
+        <span class="brand-name">MAISON</span>
+        <span class="brand-est">EST. 2004</span>
+      </a>
+
+      <nav class="nav-links-desktop" aria-label="Primary Navigation">
+        <a href="/index.html#home" class="nav-link">HOME</a>
+        <a href="/about.html" class="nav-link">ABOUT</a>
+        <a href="/services.html" class="nav-link">SERVICES</a>
+        <a href="/team.html" class="nav-link active">TEAM</a>
+        <a href="/index.html#resources" class="nav-link">RESOURCES</a>
+        <a href="/contact.html" class="nav-link">CONTACT</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="nav-cta-btn open-booking-trigger">
+          <span class="pulse-dot"></span>
+          <span>BOOK A VISIT</span>
+        </button>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu">
+    <div class="mobile-menu-links">
+      <a href="/index.html" class="mobile-nav-link"><span class="num">01</span> HOME</a>
+      <a href="/about.html" class="mobile-nav-link"><span class="num">02</span> ABOUT CLINIC</a>
+      <a href="/services.html" class="mobile-nav-link"><span class="num">03</span> SERVICES</a>
+      <a href="/team.html" class="mobile-nav-link"><span class="num">04</span> MEDICAL TEAM</a>
+      <a href="/index.html#resources" class="mobile-nav-link"><span class="num">05</span> RESOURCES</a>
+      <a href="/contact.html" class="mobile-nav-link"><span class="num">06</span> CONTACT & VISIT</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero-section" style="min-height: 65vh; padding-top: 170px;">
+      <div class="container">
+        <div class="hero-tag" style="margin-bottom: 24px;">
+          <span class="meta-index">PHYSICIANS &amp; SCHOLARS</span>
+          <span class="meta-divider"></span>
+          <span class="meta-category">BOARD-CERTIFIED EXCELLENCE</span>
+        </div>
+        <h1 class="hero-title">
+          EXEMPLARY<br />
+          <span class="italic-word">Clinical</span><br />
+          MINDS
+        </h1>
+        <p class="hero-paragraph" style="max-width: 680px; margin-top: 24px;">
+          Our physicians combine Ivy League academic pedigree with an unhurried, empathetic bedside presence. Every doctor holds dual board certifications and actively conducts ongoing clinical longevity research.
+        </p>
+      </div>
+    </section>
+
+    <!-- DETAILED PHYSICIANS LIST -->
+    <section class="team-section section-spacer">
+      <div class="container" style="display: flex; flex-direction: column; gap: 90px;">
+        
+        <!-- Doctor 01 -->
+        <div class="team-slide-card">
+          <div class="team-photo-frame" data-cursor="view" data-cursor-text="DR. ALVAREZ">
+            <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=80" alt="Dr. Carolina Alvarez, MD - Maison Medical" />
+          </div>
+          <div class="team-info-box">
+            <span class="team-doctor-role">FOUNDING PHYSICIAN &bull; PRIMARY CARE</span>
+            <h2 class="team-doctor-name">CAROLINA ALVAREZ, MD</h2>
+            <p class="team-doctor-bio">
+              Dr. Alvarez completed her medical degree and residency at Johns Hopkins, followed by advanced training in integrative metabolism. Over 18 years, she has pioneered individualized prevention models that synthesize clinical biomarkers with nutritional biochemistry.
+            </p>
+            <div class="doctor-credentials">
+              <span class="credential-tag">Johns Hopkins Medicine (MD)</span>
+              <span class="credential-tag">ABIM Internal Medicine</span>
+              <span class="credential-tag">Integrative Medicine Fellow</span>
+            </div>
+            <div style="margin-top: 16px;">
+              <button class="nav-cta-btn open-booking-trigger">
+                <span>REQUEST VISIT WITH DR. ALVAREZ &rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="editorial-divider"></div>
+
+        <!-- Doctor 02 -->
+        <div class="team-slide-card" style="grid-template-columns: 0.9fr 1.1fr;">
+          <div class="team-info-box" style="order: 1;">
+            <span class="team-doctor-role">DIRECTOR OF CARDIOMETABOLIC SCIENCES</span>
+            <h2 class="team-doctor-name">JULIAN VANCE, MD, PhD</h2>
+            <p class="team-doctor-bio">
+              A graduate of Stanford University School of Medicine, Dr. Vance holds a doctorate in vascular biophysics. His clinical focus lies in pre-clinical atherosclerosis reversal, early arterial stiffness detection, and metabolic reprogramming.
+            </p>
+            <div class="doctor-credentials">
+              <span class="credential-tag">Stanford Medicine (MD/PhD)</span>
+              <span class="credential-tag">Cardiology Fellowship</span>
+              <span class="credential-tag">Published Author in Lancet</span>
+            </div>
+            <div style="margin-top: 16px;">
+              <button class="nav-cta-btn open-booking-trigger">
+                <span>REQUEST VISIT WITH DR. VANCE &rarr;</span>
+              </button>
+            </div>
+          </div>
+          <div class="team-photo-frame" style="order: 2;" data-cursor="view" data-cursor-text="DR. VANCE">
+            <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=900&q=80" alt="Dr. Julian Vance, MD, PhD - Maison Medical" />
+          </div>
+        </div>
+
+        <div class="editorial-divider"></div>
+
+        <!-- Doctor 03 -->
+        <div class="team-slide-card">
+          <div class="team-photo-frame" data-cursor="view" data-cursor-text="DR. ROSTOVA">
+            <img src="https://images.unsplash.com/photo-1594824813550-e1c5f8849b3a?auto=format&fit=crop&w=900&q=80" alt="Dr. Elena Rostova, MD - Maison Medical" />
+          </div>
+          <div class="team-info-box">
+            <span class="team-doctor-role">WOMEN'S HEALTH &amp; ENDOCRINOLOGY</span>
+            <h2 class="team-doctor-name">ELENA ROSTOVA, MD</h2>
+            <p class="team-doctor-bio">
+              Harvard Medical School educated with clinical sub-specialization in reproductive endocrinology and mid-life female physiology. Dr. Rostova provides empowering, nuanced gynecological care grounded in current endocrine science.
+            </p>
+            <div class="doctor-credentials">
+              <span class="credential-tag">Harvard Medical School (MD)</span>
+              <span class="credential-tag">FACOG Fellow</span>
+              <span class="credential-tag">North American Menopause Society</span>
+            </div>
+            <div style="margin-top: 16px;">
+              <button class="nav-cta-btn open-booking-trigger">
+                <span>REQUEST VISIT WITH DR. ROSTOVA &rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="editorial-divider"></div>
+
+        <!-- Doctor 04 -->
+        <div class="team-slide-card" style="grid-template-columns: 0.9fr 1.1fr;">
+          <div class="team-info-box" style="order: 1;">
+            <span class="team-doctor-role">PHYSICAL MEDICINE &amp; RESTORATIVE HEALTH</span>
+            <h2 class="team-doctor-name">MARCUS STERLING, DO</h2>
+            <p class="team-doctor-bio">
+              Trained at Columbia University Medical Center in non-operative musculoskeletal medicine, Dr. Sterling applies precision musculoskeletal ultrasound and targeted regenerative therapies to restore pain-free movement.
+            </p>
+            <div class="doctor-credentials">
+              <span class="credential-tag">Columbia University</span>
+              <span class="credential-tag">Interventional Sports Fellow</span>
+              <span class="credential-tag">Ultrasound Diagnostic Specialist</span>
+            </div>
+            <div style="margin-top: 16px;">
+              <button class="nav-cta-btn open-booking-trigger">
+                <span>REQUEST VISIT WITH DR. STERLING &rarr;</span>
+              </button>
+            </div>
+          </div>
+          <div class="team-photo-frame" style="order: 2;" data-cursor="view" data-cursor-text="DR. STERLING">
+            <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=900&q=80" alt="Dr. Marcus Sterling, DO - Maison Medical" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top-cta">
+          <span class="footer-subhead">CHOOSE YOUR PHYSICIAN</span>
+          <h2 class="footer-huge-statement">
+            YOUR HEALTH.<br />
+            <span class="italic-serif">Our Priority.</span>
+          </h2>
+          <button class="editorial-cta-link open-booking-trigger" style="color: var(--text-light); background: none; border: none; padding: 0;">
+            <span style="border-bottom: 1px solid var(--text-light); padding-bottom: 4px;">SCHEDULE AN INTAKE &rarr;</span>
+          </button>
+        </div>
+
+        <div class="footer-bottom-row">
+          <span>&copy; 2004&ndash;2026 MAISON MEDICAL CLINIC. ALL RIGHTS RESERVED.</span>
+          <div style="display: flex; gap: 24px;">
+            <a href="/index.html">HOME</a>
+            <a href="/about.html">ABOUT</a>
+            <a href="/services.html">SERVICES</a>
+            <a href="/contact.html">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- BOOKING MODAL -->
+  <div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true">
+    <div class="booking-drawer">
+      <div>
+        <div class="drawer-header">
+          <div>
+            <span style="font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-secondary);">RESERVATION</span>
+            <h2 style="font-size: 2.2rem; margin-top: 4px;">Schedule a Consultation</h2>
+          </div>
+          <button class="drawer-close-btn" aria-label="Close reservation drawer">&times;</button>
+        </div>
+
+        <form class="booking-form" id="appointment-form">
+          <div class="form-group">
+            <label class="form-label" for="patient-name">FULL NAME</label>
+            <input type="text" id="patient-name" class="form-input" placeholder="Eleanor Vance" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="patient-email">EMAIL ADDRESS</label>
+            <input type="email" id="patient-email" class="form-input" placeholder="eleanor@example.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="doctor-select">PREFERRED PHYSICIAN</label>
+            <select id="doctor-select" class="form-select" required>
+              <option value="alvarez">Dr. Carolina Alvarez, MD (Primary Care)</option>
+              <option value="vance">Dr. Julian Vance, MD, PhD (Longevity &amp; Cardiology)</option>
+              <option value="rostova">Dr. Elena Rostova, MD (Women's Health)</option>
+              <option value="sterling">Dr. Marcus Sterling, DO (Sports &amp; Restoration)</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="preferred-date">PREFERRED DATE</label>
+            <input type="date" id="preferred-date" class="form-input" required />
+          </div>
+          <button type="submit" class="submit-booking-btn">CONFIRM APPOINTMENT REQUEST &rarr;</button>
+        </form>
+
+        <div class="booking-success-msg" id="booking-success">
+          <div style="font-size: 2.2rem; color: #5B8266;">&#10003;</div>
+          <h3 style="font-size: 2rem;">Consultation Requested</h3>
+          <p style="color: var(--text-secondary);">Our concierge will contact you within 2 hours to confirm your reservation.</p>
+          <button class="nav-cta-btn drawer-close-btn" style="width: auto; margin-top: 16px;"><span>CLOSE</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

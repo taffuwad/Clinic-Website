@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Our Clinic | Maison Medical</title>
+  <meta name="description" content="Discover the architectural philosophy, clinical heritage, and human-centric care standards of Maison Medical Clinic in San Francisco." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/responsive.css" />
+
+  <!-- GSAP & Lenis -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+</head>
+
+<body class="page-about">
+  <div class="transition-curtain" aria-hidden="true"></div>
+  <div class="custom-cursor" aria-hidden="true"></div>
+  <div class="cursor-follower" aria-hidden="true">
+    <span class="cursor-text">EXPLORE</span>
+  </div>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" id="main-header">
+    <div class="header-container">
+      <a href="/index.html" class="brand-logo" aria-label="Maison Medical Homepage">
+        <span class="brand-name">MAISON</span>
+        <span class="brand-est">EST. 2004</span>
+      </a>
+
+      <nav class="nav-links-desktop" aria-label="Primary Navigation">
+        <a href="/index.html#home" class="nav-link">HOME</a>
+        <a href="/about.html" class="nav-link active">ABOUT</a>
+        <a href="/services.html" class="nav-link">SERVICES</a>
+        <a href="/team.html" class="nav-link">TEAM</a>
+        <a href="/index.html#resources" class="nav-link">RESOURCES</a>
+        <a href="/contact.html" class="nav-link">CONTACT</a>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <button class="nav-cta-btn open-booking-trigger">
+          <span class="pulse-dot"></span>
+          <span>BOOK A VISIT</span>
+        </button>
+        <button class="hamburger-btn" aria-label="Toggle navigation menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu">
+    <div class="mobile-menu-links">
+      <a href="/index.html" class="mobile-nav-link"><span class="num">01</span> HOME</a>
+      <a href="/about.html" class="mobile-nav-link"><span class="num">02</span> ABOUT CLINIC</a>
+      <a href="/services.html" class="mobile-nav-link"><span class="num">03</span> SERVICES</a>
+      <a href="/team.html" class="mobile-nav-link"><span class="num">04</span> MEDICAL TEAM</a>
+      <a href="/index.html#resources" class="mobile-nav-link"><span class="num">05</span> RESOURCES</a>
+      <a href="/contact.html" class="mobile-nav-link"><span class="num">06</span> CONTACT & VISIT</a>
+    </div>
+    <div class="mobile-menu-footer">
+      <button class="nav-cta-btn open-booking-trigger" style="display: inline-flex; width: fit-content;">
+        <span class="pulse-dot"></span>
+        <span>BOOK A CONSULTATION</span>
+      </button>
+      <div class="contact-line">+1 (415) 890-2400 &bull; care@maisonclinic.com</div>
+    </div>
+  </div>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="hero-section" style="min-height: 70vh; padding-top: 170px;">
+      <div class="container">
+        <div class="hero-tag" style="margin-bottom: 24px;">
+          <span class="meta-index">SINCE 2004</span>
+          <span class="meta-divider"></span>
+          <span class="meta-category">OUR CLINICAL ESSENCE</span>
+        </div>
+        <h1 class="hero-title">
+          THE ART OF<br />
+          <span class="italic-word">Conscious</span><br />
+          HEALTHCARE
+        </h1>
+        <p class="hero-paragraph" style="max-width: 680px; margin-top: 24px;">
+          Maison was founded on a simple yet radical conviction: that true healing demands both unimpeachable clinical rigor and an architectural sanctuary free from anxiety, haste, and institutional indifference.
+        </p>
+      </div>
+    </section>
+
+    <!-- ASYMMETRIC IMAGE + STORY -->
+    <section class="about-section section-spacer">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-col">
+            <div class="about-image-frame" data-cursor="view" data-cursor-text="SANCTUARY">
+              <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1200&q=80" alt="Maison Medical Consultation Suite" />
+            </div>
+          </div>
+          <div class="about-content-col">
+            <span class="section-label">01 &mdash; ARCHITECTURAL HARMONY</span>
+            <h2 class="about-heading">
+              Space as an<br />
+              <span class="italic-serif">Active Medicine</span>
+            </h2>
+            <p class="about-paragraph">
+              Medical environments too frequently elevate stress biomarkers, triggering acute cortisol and autonomic spikes before a physician even enters the examination room.
+            </p>
+            <p class="about-paragraph">
+              At Maison, our Presidio facility was meticulously sculpted with biophilic acoustic woods, soft filtered Northern light, purified microclimate air systems, and discrete private arrival corridors. Here, the nervous system down-regulates the moment you step through our doors.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILLARS GRID -->
+    <section class="pricing-process-section section-spacer">
+      <div class="container">
+        <div class="section-eyebrow-row">
+          <span class="section-label">02 &mdash; OUR CORE TENETS</span>
+          <span class="section-label">STANDARDS OF EXCELLENCE</span>
+        </div>
+
+        <div class="process-columns-grid">
+          <div class="process-step-card">
+            <span class="step-num">01 / PRINCIPLE</span>
+            <h3 class="step-title">UNHURRIED ATTENTION</h3>
+            <p class="step-desc">
+              Every consultation spans a full 60 minutes. We cap patient rosters at one-tenth the national average, ensuring uninterrupted depth and thoughtful clinical examination.
+            </p>
+          </div>
+
+          <div class="process-step-card">
+            <span class="step-num">02 / PRINCIPLE</span>
+            <h3 class="step-title">PRECISION MULTI-OMICS</h3>
+            <p class="step-desc">
+              We leverage next-generation biomarker sequencing, advanced lipid fractionations, and arterial ultrasound to preempt pathology years before symptoms emerge.
+            </p>
+          </div>
+
+          <div class="process-step-card">
+            <span class="step-num">03 / PRINCIPLE</span>
+            <h3 class="step-title">CONTINUOUS ADVOCACY</h3>
+            <p class="step-desc">
+              Your care does not terminate at our doorstep. Direct 24/7 digital physician access and proactive quarterly telemetry keep your health plan dynamically synchronized.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top-cta">
+          <span class="footer-subhead">START YOUR JOURNEY</span>
+          <h2 class="footer-huge-statement">
+            YOUR HEALTH.<br />
+            <span class="italic-serif">Our Priority.</span>
+          </h2>
+          <button class="editorial-cta-link open-booking-trigger" style="color: var(--text-light); background: none; border: none; padding: 0;">
+            <span style="border-bottom: 1px solid var(--text-light); padding-bottom: 4px;">RESERVE A CONSULTATION &rarr;</span>
+          </button>
+        </div>
+
+        <div class="footer-info-grid">
+          <div class="footer-col">
+            <span class="footer-col-title">VISIT US</span>
+            <p class="footer-text-link">
+              Maison Medical Clinic<br />
+              Presidio Heritage District<br />
+              San Francisco, CA 94129
+            </p>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">HOURS</span>
+            <p class="footer-text-link">
+              Mon &ndash; Fri: 8:00 AM &ndash; 6:00 PM<br />
+              Sat: 9:00 AM &ndash; 2:00 PM
+            </p>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">CONTACT</span>
+            <a href="tel:+14158902400" class="footer-text-link">+1 (415) 890-2400</a>
+            <a href="mailto:care@maisonclinic.com" class="footer-text-link">care@maisonclinic.com</a>
+          </div>
+          <div class="footer-col">
+            <span class="footer-col-title">DIRECTORY</span>
+            <a href="/index.html" class="footer-text-link">Home Overview</a>
+            <a href="/services.html" class="footer-text-link">Services &amp; Pricing</a>
+            <a href="/team.html" class="footer-text-link">Medical Team</a>
+          </div>
+        </div>
+
+        <div class="footer-bottom-row">
+          <span>&copy; 2004&ndash;2026 MAISON MEDICAL CLINIC. ALL RIGHTS RESERVED.</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- BOOKING MODAL -->
+  <div class="modal-overlay" id="booking-modal" role="dialog" aria-modal="true">
+    <div class="booking-drawer">
+      <div>
+        <div class="drawer-header">
+          <div>
+            <span style="font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-secondary);">RESERVATION</span>
+            <h2 style="font-size: 2.2rem; margin-top: 4px;">Schedule a Consultation</h2>
+          </div>
+          <button class="drawer-close-btn" aria-label="Close reservation drawer">&times;</button>
+        </div>
+
+        <form class="booking-form" id="appointment-form">
+          <div class="form-group">
+            <label class="form-label" for="patient-name">FULL NAME</label>
+            <input type="text" id="patient-name" class="form-input" placeholder="Eleanor Vance" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="patient-email">EMAIL ADDRESS</label>
+            <input type="email" id="patient-email" class="form-input" placeholder="eleanor@example.com" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="patient-phone">PHONE NUMBER</label>
+            <input type="tel" id="patient-phone" class="form-input" placeholder="+1 (415) 555-0199" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="service-select">SERVICE OF INTEREST</label>
+            <select id="service-select" class="form-select" required>
+              <option value="primary">Primary Care Consultation ($250)</option>
+              <option value="obgyn">OB/GYN &amp; Hormonal Balance</option>
+              <option value="longevity">Longevity &amp; Biomarker Mapping</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="preferred-date">PREFERRED DATE</label>
+            <input type="date" id="preferred-date" class="form-input" required />
+          </div>
+          <button type="submit" class="submit-booking-btn">CONFIRM APPOINTMENT REQUEST &rarr;</button>
+        </form>
+
+        <div class="booking-success-msg" id="booking-success">
+          <div style="font-size: 2.2rem; color: #5B8266;">&#10003;</div>
+          <h3 style="font-size: 2rem;">Consultation Requested</h3>
+          <p style="color: var(--text-secondary);">Our concierge will contact you within 2 hours to confirm your reservation.</p>
+          <button class="nav-cta-btn drawer-close-btn" style="width: auto; margin-top: 16px;"><span>CLOSE</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
